@@ -1,0 +1,35 @@
+@import "variables";
+
+.footer-section {
+  padding: 3rem 0;
+  background: #000;
+  height: 100%;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: $size16px;
+      font-weight: 600;
+      color: $light-color;
+      margin: 1rem 0;
+    }
+    .footer-sm {
+      display: flex;
+      justify-content: space-around;
+      width: 70%;
+      margin: 1rem 0;
+      i {
+        text-align: center;
+        display: inline-block;
+        min-width: 5rem;
+        font-size: $size20px;
+        color: $light-color;
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+    }
+  }
+}

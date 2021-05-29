@@ -1,0 +1,100 @@
+@import "variables";
+
+.cards-section {
+  background: #f9f9f9;
+  padding: 140px 0;
+
+  .cards-container {
+    width: 95%;
+    margin: auto;
+
+    .cards-title {
+      span {
+        display: block;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        color: $theme-color;
+        font-size: $size16px;
+        font-weight: 600;
+      }
+      h3 {
+        color: $dark-color;
+        font-size: $size30px;
+      }
+    }
+
+    .cards-inner {
+      padding-top: 9rem;
+
+      li {
+        margin-bottom: 5rem;
+      }
+
+      .inner {
+        width: 100%;
+        height: 100%;
+        padding: 4rem 6rem;
+        box-shadow: 0 0 20px rgba($color: #333, $alpha: 0.3);
+        transition: box-shadow 0.5s ease;
+
+        .inner-logo {
+          display: inline-block;
+          font-size: 7rem;
+          color: $theme-color;
+          margin-bottom: 2rem;
+        }
+
+        h3 {
+          font-size: $size18px;
+          color: $dark-color;
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: $size16px;
+          color: $dark-color;
+          font-weight: 400;
+          text-align: justify;
+        }
+      }
+
+      .inner:hover {
+        box-shadow: 0 0 20px rgba($color: #000, $alpha: 0.4);
+      }
+
+      p {
+        color: $dark-color;
+        font-size: $size18px;
+        font-weight: 600;
+
+        a {
+          font-size: $size18px;
+          font-weight: 700;
+          text-decoration: none;
+          color: $dark-color;
+          transition: border 0.5s ease;
+          position: relative;
+        }
+
+        a::before {
+          content: "";
+          display: block;
+          width: 100%;
+          background: $dark-color;
+          border-bottom: medium solid $dark-color;
+
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: all 0.4s;
+        }
+
+        a:hover::before {
+          border-bottom: medium solid $theme-color;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "variables";
+
+.contact-section {
+  background: #f9f9f9;
+  padding: 14rem 0;
+  .contact-container {
+    width: 95%;
+    margin: auto;
+
+    .contact-title {
+      span {
+        display: block;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        color: $theme-color;
+        font-size: $size16px;
+        font-weight: 600;
+      }
+
+      h3 {
+        color: $dark-color;
+        font-size: $size30px;
+      }
+    }
+
+    p {
+      padding: 5rem 0;
+      font-size: $size16px;
+      color: $dark-color;
+      text-align: justify;
+    }
+
+    .contact-form-container {
+      width: 100%;
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label {
+          display: inline-block;
+          min-width: 15rem;
+          text-align: center;
+          font-size: $size16px;
+          font-weight: 400;
+          margin-bottom: 0.5rem;
+        }
+
+        input {
+          border: none;
+          border-radius: 1rem;
+          font-size: $size16px;
+          width: 80%;
+          height: 3.5rem;
+          box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+          padding: 0.5rem 0.5rem;
+        }
+
+        textarea {
+          border: none;
+          border-radius: 1rem;
+          font-size: $size16px;
+          width: 80%;
+          box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+          padding: 0.5rem 0.5rem;
+        }
+
+        button {
+          font-size: $size16px;
+          min-width: 10rem;
+          color: $light-color;
+          background: $theme-color;
+          padding: 1rem;
+          margin-top: 2rem;
+          border: none;
+          border-radius: 1rem;
+          box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: #bb5e17;
+        }
+      }
+    }
+  }
+}

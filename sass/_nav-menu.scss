@@ -1,0 +1,81 @@
+nav {
+  position: relative;
+  z-index: 999;
+}
+
+.inner-nav {
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-logo {
+  width: 100px;
+  height: 50px;
+  background-image: url(../assets/Milogo.com.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-button {
+  font-size: 0.1rem;
+  z-index: 999;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 990;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translate(0, -100%);
+}
+.nav-container.is-active {
+  top: 50px;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.menu-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 20;
+  z-index: 980;
+  width: 100%;
+  background-color: #fff;
+}
+
+.menu-desktop li {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  list-style: none;
+  border: solid 1px #eee;
+}
+
+.nav-container .menu-desktop li:hover {
+  background-color: #eee;
+}
+.nav-container .menu-desktop a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.nav-container .menu-desktop a:hover {
+  color: rgba(88, 4, 4, 0.637);
+}
