@@ -243,7 +243,7 @@ header .hero-container .hero-img-txt p {
 
 header .hero-container a {
   position: absolute;
-  bottom: 8rem;
+  bottom: 1rem;
   color: #fff;
   font-size: 5rem;
 }
