@@ -1,4 +1,5 @@
 import changeColorTop from "./change_top_color.js";
+import followCursor from "./cursor.js";
 import hamburgerMenu from "./hamburguer.js";
 import randomColors from "./random-colors.js";
 
@@ -8,4 +9,5 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".nav-button", ".nav-container", ".menu-desktop");
   randomColors(".rndm-color");
   changeColorTop();
+  followCursor();
 });
