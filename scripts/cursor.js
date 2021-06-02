@@ -5,9 +5,23 @@ export default function followCursor() {
     $innerCircle = d.querySelector(".inner-circle");
 
   d.addEventListener("mousemove", (e) => {
-    $circle.setAttribute(
-      "style",
-      `top: ${e.pageY - 10}px; left: ${e.pageX - 15}px `
-    );
+    if (
+      e.target.matches("a") ||
+      e.target.matches("img") ||
+      e.target.matches("i") ||
+      e.target.matches("input") ||
+      e.target.matches("textarea") ||
+      e.target.matches("button")
+    ) {
+      $circle.removeAttribute(
+        "style",
+        `top: ${e.pageY - 10}px; left: ${e.pageX - 15}px `
+      );
+    } else {
+      $circle.setAttribute(
+        "style",
+        `top: ${e.pageY - 10}px; left: ${e.pageX - 15}px `
+      );
+    }
   });
 }
