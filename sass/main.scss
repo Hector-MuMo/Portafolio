@@ -74,10 +74,6 @@ body {
     margin: auto;
   }
 
-  .about-img-container .about-img-inner:hover {
-    transform: translate3d(15px, -20px, 0);
-  }
-
   .cards-inner {
     ul {
       display: grid;
@@ -112,6 +108,7 @@ body {
 
   .inner-nav {
     background-color: transparent;
+    transition: all 100ms ease;
   }
 
   .inner-nav .header-logo {
@@ -169,10 +166,6 @@ body {
 
   .about-img-container {
     margin: auto;
-  }
-
-  .about-img-container .about-img-inner:hover {
-    transform: translate3d(15px, -20px, 0);
   }
 
   .cards-inner {

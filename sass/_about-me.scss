@@ -31,6 +31,25 @@
     margin-bottom: 7rem;
   }
 
+  @keyframes about-img {
+    0% {
+      transform: rotate(45deg) /* translateX(3rem) */;
+    }
+    25% {
+      /*  transform: rotate(90deg) */ /* translateX(6rem) */
+    }
+    50% {
+      /* transform: rotate(180deg) */ /* translateX(9rem) */
+    }
+    75% {
+      transform: rotate(360deg) translateX(12rem);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
   .about-img-inner {
     position: relative;
     max-width: 500px;
@@ -46,7 +65,7 @@
   }
 
   .about-img-inner:hover {
-    transform: translate3d(-10px, 15px, 0);
+    animation: about-img 3s ease-in-out 0s 1 alternate none;
   }
 
   .about-img-border {
