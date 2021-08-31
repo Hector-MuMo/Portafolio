@@ -29,24 +29,29 @@
   /* sección about-img */
   .about-img-container {
     margin-bottom: 7rem;
+    overflow: hidden;
   }
 
   @keyframes about-img {
-    0% {
-      transform: rotate(45deg) /* translateX(3rem) */;
-    }
-    25% {
-      /*  transform: rotate(90deg) */ /* translateX(6rem) */
-    }
-    50% {
-      /* transform: rotate(180deg) */ /* translateX(9rem) */
-    }
-    75% {
-      transform: rotate(360deg) translateX(12rem);
+    10%,
+    90% {
+      transform: translate3d(-4px, 0, 0);
     }
 
-    100% {
-      transform: rotate(0deg);
+    20%,
+    80% {
+      transform: translate3d(5px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-8px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(8px, 0, 0);
     }
   }
 
